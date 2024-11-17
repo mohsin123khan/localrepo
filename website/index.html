@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohsin Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(7, 7, 32);
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75px;
+            background-color: rgb(22, 22, 82);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(158, 158, 236);
+            font-size: 1.01rem;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 30px 0;
+            font-family: sans-serif;
+        }
+
+        .leftsection .btn{
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+             border: 0px solid white; 
+            border-radius: 12px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-top: 40px;
+        }
+
+        .leftsection .button{
+            font-size: large;
+            margin: 0 22px;
+            background-color:#1e2167;
+            border: 0px solid white; 
+            border-radius: 12px;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 12px;
+            color:white ;
+        }
+
+        .rightsection {
+            height: 20rem;
+            /* display: flex; */
+            /* justify-content: center; */
+        }
+
+        .img {
+            height: 25rem;
+            width: 400px;
+        
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .secondsection p {
+            color: gray;
+            margin-bottom: 40px;
+        }
+
+        /* Updated work experience section */
+        .work-experience {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .experience-item:hover {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(22, 22, 82);
+            border-radius: 10px;
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.04);
+            margin-bottom: 23px;
+
+        }
+
+        .experience-item img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .experience-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .experience-title {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: rgb(170, 107, 228);
+        }
+
+        .experience-duration {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: gray;
+        }
+
+        .experience-description {
+            font-size: 1rem;
+            color: lightgray;
+        }
+        .footer{
+            background-color: #0e0e1a;
+            
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+            
+        }
+
+        .footer ul{
+            list-style: none;
+           
+        }
+        .footer >div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Mohsin Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, my name is <span class="purple">Mohsin</span>
+                <div>and I'm a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+        
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img class="img" src="pngtree-programmer-it-developer-png-image_10439724.png" alt="Developer Image">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="work-experience">
+
+                <div class="experience-item">
+                    <img src="pic-developer.png" alt="Html Developer">
+                    <div class="experience-content">
+                        <div class="experience-title">HTML Developer</div>
+                        <div class="experience-duration">(2010-2012)</div>
+                        <div class="experience-description">
+                            Developed static and dynamic web pages with HTML, CSS, and basic JavaScript.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <img src="pic-developer.png" alt="JavaScript Developer">
+                    <div class="experience-content">
+                        <div class="experience-title">JavaScript Developer</div>
+                        <div class="experience-duration">(2012-2014)</div>
+                        <div class="experience-description">
+                            Built dynamic, interactive web applications and UI components with JavaScript.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <img src="pic-developer.png" alt="WordPress Developer">
+                    <div class="experience-content">
+                        <div class="experience-title">WordPress Developer</div>
+                        <div class="experience-duration">(2014-2016)</div>
+                        <div class="experience-description">
+                            Designed and developed custom WordPress themes and plugins, optimizing user experience and
+                            site performance.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+        <div class="footer-first">
+            <h3>Mohsin Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact me</li>
+
+            </ul>
+        </div>
+        <div class="footer-third">
+             <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact me</li>
+
+            </ul>
+        </div>
+        <div class="footer-fourth">
+             <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact me</li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="footer-rights">
+       Copyright &#169; www.mohsinportfolio.com | All rights reserved 
+    </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'App Developer', 'WordPress Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html> 
